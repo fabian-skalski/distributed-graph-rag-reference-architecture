@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "multimodal-graph-rag-file-search"
+version = "0.1.0"
+description = "A multimodal Graph RAG (Retrieval-Augmented Generation) implementation for file search using knowledge graphs and community detection"
+authors = ["Fabian Skalski"]
+readme = "README.md"
+packages = [{include = "*.py"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+# OpenAI API client for LLM-based entity extraction, summarization, and query answering
+openai = "^2.8.1"
+# High-performance graph library with built-in Leiden algorithm for community detection
+igraph = "^1.0.0"
+# Environment variable management for API keys and configuration
+python-dotenv = "^1.2.1"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

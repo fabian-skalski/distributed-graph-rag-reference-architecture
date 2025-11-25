@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "graph-processor-service"
+version = "1.0.0"
+description = "Graph building and community detection service"
+authors = ["Fabian Skalski"]
+packages = [{include = "graph_processor_service"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.121.3"
+uvicorn = "^0.38.0"
+pydantic = "^2.0.0"
+igraph = "^0.11.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

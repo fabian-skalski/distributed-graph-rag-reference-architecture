@@ -1,0 +1,10 @@
+FROM fluent/fluentd:v1.16-1
+
+# Use root to install plugins
+USER root
+
+# Install fluent-plugin-concat for multi-line log handling
+RUN gem install fluent-plugin-concat
+
+# Switch back to fluent user
+USER fluent

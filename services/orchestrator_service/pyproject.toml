@@ -2,7 +2,7 @@
 name = "orchestrator-service"
 version = "1.0.0"
 description = "Graph RAG Orchestrator Service"
-authors = ["Your Name <you@example.com>"]
+authors = ["Fabian Skalski"]
 package-mode = false
 
 [tool.poetry.dependencies]

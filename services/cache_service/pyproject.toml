@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cache-service"
+version = "1.0.0"
+description = "Document cache service with Neo4j graph database"
+authors = ["Fabian Skalski"]
+packages = [{include = "cache_service"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = "^0.121.3"
+uvicorn = "^0.38.0"
+pydantic = "^2.0.0"
+pydantic-settings = "^2.0.0"
+neo4j = "^5.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
